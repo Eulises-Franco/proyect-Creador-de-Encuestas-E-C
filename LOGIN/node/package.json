@@ -1,0 +1,29 @@
+{
+  "name": "mipackage",
+  "version": "0.0.1",
+  "description": "mi paquete es enorme",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --preset=@/preset-env",
+    "dev": "nodemon --exec npm run babel-node src/index.js"
+  },
+  "keywords": [
+    "mi",
+    "paquetote"
+  ],
+  "author": "eulises <eulisesfranco62@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}

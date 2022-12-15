@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="estyle.css">
+</head>
+
+<body>
+    <div class="container bg-white my-5 p-4 border">
+        <div class="row">
+
+            <div class="col">
+                <h1>Factura Online</h1>
+            </div>
+
+
+            <div class="col text-end">
+                <h2 class="text-primary">#FA001</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <p>Concepto</p>
+            </div>
+            <div class="col-2">
+                <p>Precio €</p>
+            </div>
+            <div class="col">
+                <p>Cant.</p>
+            </div>
+            <div class="col">
+                <p>IVA %</p>
+            </div>
+            <div class="col">
+                <p>IRPF %</p>
+            </div>
+
+            <div class="row" id="contenido">
+
+            </div>
+
+            <!--Añadir fila-->
+            <div class="row mt-4">
+                <div class="col d-grid">
+                    <button class="btn btn-primary" type="button" onclick="addRow()">añadir fila</button>
+                </div>
+            </div>
+
+            <!--resultados-->
+            <div class="row mt-5 justify-content-end">
+                <div class="col-5">
+
+                    <div class="row">
+                        <div class="col">
+                            <p>base imponible</p>
+                        </div>
+                        <div class="col text-end">
+                            <p id="totalbase">1.000 €</p>
+                        </div>
+                    </div>
+                    <!--IVA-->
+                    <div class="row">
+                        <div class="col">
+                            <p>IVA</p>
+                        </div>
+                        <div class="col text-end">
+                            <p id="totalIVA">1.000 €</p>
+                        </div>
+                    </div>
+                    <!--IRPF-->
+                    <div class="row">
+                        <div class="col">
+                            <p>IRPF</p>
+                        </div>
+                        <div class="col text-end">
+                            <p id="totalIRPF">1.000 €</p>
+                        </div>
+                    </div>
+                    <!--TOTAL-->
+                    <div class="row">
+                        <div class="col">
+                            <p>TOTAL</p>
+                        </div>
+                        <div class="col text-end">
+                            <p>1.000 €</p>
+                        </div>
+
+                        <div class="row">
+                            <button class="btn btn-primary" type="button" onclick="calcularTodo()">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!--Script bootstrap-->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

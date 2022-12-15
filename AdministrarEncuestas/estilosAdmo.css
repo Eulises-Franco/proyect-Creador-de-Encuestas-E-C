@@ -1,0 +1,92 @@
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.Admo {
+    border-bottom: 3px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.Tabla {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 50px auto;
+    height: 5%;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.Cabeza {
+    background-color: rgba(255, 123, 0, 0.767);
+}
+
+.Tabla div {
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    height: 50px;
+}
+
+
+.Tabla img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.Navegar {
+    background-color: rgba(255, 123, 0, 0.767);
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.aside{
+    margin: -10px;
+    background-color: #adadad;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0px 5px 10px gray;
+}
+.aside p { 
+    padding: 10px;
+    border: 1px solid rgb(65, 63, 63) ;
+    margin: 0px;
+    box-shadow:  2px 3px 6px #adadad;
+}
+.aside img {
+    border-radius: 100%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    box-shadow:  2px 3px 6px #adadad;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.todo{
+    margin-left: 21%;
+}
+@media only screen and (max-width: 600px) {
+    .todo{
+        margin-left: 0%;
+    }
+    .aside{
+        position: relative;
+        margin: auto;
+        width: 100%;
+    }
+    .aside p { 
+        border: 1px solid rgb(65, 63, 63) ;
+        box-shadow:  2px 3px 6px #adadad;
+        text-align: center;
+    }
+    
+}
+

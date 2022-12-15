@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de seción</title>
+    <style>
+        * {
+
+            background-color: white;
+        }
+
+        .login {
+            font-size: 12px;
+
+            margin-top: 10px;
+            color: black;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .textoInicio {
+            margin-top: 10px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box {
+
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+
+            margin: auto;
+            margin-top: 50px;
+            line-height: 20px;
+            /* Rectangle 58 */
+
+
+            box-sizing: border-box;
+
+
+            width: 317px;
+            height: 372px;
+
+
+            background: #FFFFFF;
+            border: 2px solid #ffffff;
+            box-shadow: 0px 0px 15px 5px rgba(63, 30, 1, 0.5);
+            border-radius: 15px;
+        }
+
+        .btn {
+            box-sizing: border-box;
+            width: 191px;
+            height: 42px;
+            background: #FFD6B1;
+            border: 2px solid #000000;
+            box-shadow: 0px px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #input {
+            box-sizing: border-box;
+
+
+            width: 225px;
+            height: 23px;
+
+
+            background: #FFFFFF;
+            border: 2px solid #FFA95B;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+        }
+
+        .textoResgistro {
+
+            font-size: 12px;
+            padding-top: 25px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="textoInicio">
+            <h3>Iniciar sesión</h3>
+        </div>
+
+        <div class="login">
+            <p>Correo electrónico:</p>
+            <input type="text" id="input">
+            <p>Contraseña:</p>
+            <input type="text" id="input">
+            <a href="#">
+                <p>¿Olvidaste tu contraseña?</p>
+            </a>
+        </div>
+        <div class="btnInicio">
+            <button type="button" class="btn">Iniciar sesión</button>
+        </div>
+        <div class="textoResgistro">
+            <p>Si no tienes cuenta, <a href="resgistro/registro.html">regístrate</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-left: 38%;
+}
+
+.bar {
+    width: 90%;
+    height: 0px;
+    margin: 0% auto;
+    border: 1.25px solid #000000;
+    background-color: #000000;
+    border-radius: 10px;
+    transform: rotate(0deg);
+}
+
+.question {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12%;
+
+}
+
+.questionInput {
+    display: flex;
+    width: 75%;
+    height: 24px;
+    margin: auto;
+    background: #FFFFFF;
+    border: 2px solid #FFA95B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.answers {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12%;
+}
+
+.answerInput {
+    display: flex;
+    width: 70%;
+    height: 23px;
+    margin: 7px auto;
+    background: #FFFFFF;
+    border: 2px solid #FFA95B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.optionBox {
+    display: flex;
+    width: 85%;
+    height: 50px;
+    margin: 2% auto;
+    background: #FFA95B;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.optionInput {
+/*    width: 17px;
+    height: 17px;
+    margin-left: 350px;
+    margin-top: 15px;*/
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.option {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firstDate {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12%;
+}
+
+.secondDate {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12%;
+}
+
+.firstDateInput {
+    width: 35%;
+    height: 20px;
+    margin-left: 33%;
+    background: #FFFFFF;
+    border: 2px solid #FFA95B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.secondDateInput {
+    width: 35%;
+    height: 20px;
+    margin-left: 33%;
+    background: #FFFFFF;
+    border: 2px solid #FFA95B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.commentBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12%;
+}
+
+.commentInput {
+
+    width: 17px;
+    height: 17px;
+    margin-left: 250px;
+    margin-top: 7%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.buttonsBox {
+    display: flex;
+    flex-direction: row;
+    margin: auto 35%;
+
+
+}
+
+.postButton {
+    box-sizing: border-box;
+
+
+    width: 100px;
+    height: 29px;
+    margin-left: -18%;
+
+    background: #FFD6B1;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.deleteButton {
+    box-sizing: border-box;
+
+
+    width: 100px;
+    height: 29px;
+    margin-left: 10%;
+
+    background: #FFD6B1;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.saveButton {
+    box-sizing: border-box;
+
+
+    width: 100px;
+    height: 29px;
+    margin-left: -4%;
+
+    background: #FFD6B1;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
