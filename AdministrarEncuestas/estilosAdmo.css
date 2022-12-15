@@ -3,6 +3,9 @@ a:visited,
 a:active {
     text-decoration: none;
 }
+body {
+    margin: 0%;
+}
 
 .Admo {
     border-bottom: 3px solid black;
@@ -45,7 +48,7 @@ a:active {
     border: 1px solid black;
 }
 .aside{
-    margin: -10px;
+    margin: 0px;
     background-color: #adadad;
     position: absolute;
     width: 20%;
