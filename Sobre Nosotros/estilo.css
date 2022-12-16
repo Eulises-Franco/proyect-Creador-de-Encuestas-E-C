@@ -1,0 +1,23 @@
+.tar {    
+    margin: auto;
+    display: flex;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.personas{
+    width: 30%;
+}
+
+.personas img{
+    border-radius: 50%;
+}
+
+.personas p{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5%;
+    margin: 0;
+}

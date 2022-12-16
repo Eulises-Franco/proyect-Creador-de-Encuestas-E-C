@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="buscador">
+    <nav class="buscador ">
         <div clas="lupa">
             <a href=""><img src="imagenes/lupa.png" alt="lupa" width="30px" height="30px"></a>
         </div>
@@ -27,18 +27,21 @@
             <img src="imagenes/logo.png" alt="logo" width="150px">
         </div>
         <div class="opciones">
-            <a href="">
+            <a href="#">
                 <p>inicio</p>
             </a>
-            <a href="">
+            <a href="Sobre Nosotros/Nosotros.html">
                 <p>Sobre Nosotros</p>
             </a>
             <a href="LOGIN/login.html">
                 <p>Iniciar Sesión</p>
             </a>
-            <a href="">
-                <p>Mas..</p>
-            </a>
+            <button type="button" id="Mas" onclick="Menu()">Mas..
+                <ul id="uli">
+                    <li><a href="#">cuenta</a></li>
+                    <li><a href="#">preguntas frecuentes</a></li>
+                </ul>
+            </button>
         </div>
     </div>
     <header class="portada">
@@ -47,49 +50,48 @@
     <article class="articulo">
         <h2>Encuest Creator</h2>
         <p>El mejor creador de encuesetas a nivel persona, nivel profecional
-            y a nivel educativo que existe en la actulidad. En las siguiente opciones te dejamos los mejores ejemplos
-            de las encuestas publicas mas creativas según nuestros expertos
+            y a nivel educativo que existe en la actulidad. Aqui puedes acceder a nuestras herramientas,
+            y opciones, aunque algunas todavía estamos trabajando en ellas.
         </p>
     </article>
-    <div class="tarjetas" c>
-         <div class="card" style="width: 18rem;" id="C">
-            <img src="https://images.pexels.com/photos/6684265/pexels-photo-6684265.jpeg?auto=compress&cs=tinysrgb&w=600"
-                class="card-img-top" alt="...">
+    <div class="tarjetas">
+         <div class="card h" style="width: 18rem;" id="C">
+            <a href="crearEncuesta/crearEncuesta.html"><img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">Crear tu encuesta</h5>
-                <p class="card-text">En este espacio es para pasar a crear tus propias encuestas
-                    y te enseñamos paso a paso como hacerlo
-                </p>
+                <p class="card-text">En este espacio es para pasar a crear tus propias encuestas</p>
                 <a href="crearEncuesta/crearEncuesta.html" class="btn btn-primary" style="background-color: rgba(255, 123, 0, 0.767);">Crear</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;" id="C">
-            <img src="https://images.pexels.com/photos/6684265/pexels-photo-6684265.jpeg?auto=compress&cs=tinysrgb&w=600"
-                class="card-img-top" alt="...">
+        <div class="card h" style="width: 18rem;" id="C">
+            <a href="votarEncuestas/index.html"><img src="https://images.pexels.com/photos/6684265/pexels-photo-6684265.jpeg?auto=compress&cs=tinysrgb&w=600"
+                class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">Encuestas mas famosas</h5>
-                <p class="card-text">Aquí podemos votar las encuestas ma divertidas, mas famosas, y demás.</p>
+                <p class="card-text">Aquí podemos votar las encuestas más divertidas, más famosas, y demás.</p>
                 <a href="votarEncuestas/index.html" class="btn btn-primary" style="background-color: rgba(255, 123, 0, 0.767);">Ir a ello</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;" id="C">
-            <img src="https://images.pexels.com/photos/6684265/pexels-photo-6684265.jpeg?auto=compress&cs=tinysrgb&w=600"
-                class="card-img-top" alt="...">
+        <div class="card h" style="width: 18rem;" id="C">
+            <a href="tutoriales/Tutoriales.html"><img src="https://images.pexels.com/photos/4160076/pexels-photo-4160076.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">Tutoriales</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary" style="background-color: rgba(255, 123, 0, 0.767);">Ir a ello</a>
+                <p class="card-text">Te enseñamos como usar nuestras herramientas y aplicaciones.
+                </p>
+                <a href="tutoriales/Tutoriales.html" class="btn btn-primary" style="background-color: rgba(255, 123, 0, 0.767);">Vamos</a>    
             </div>
+            
         </div>
-        <div class="card" style="width: 18rem;" id="C" s>
-            <img src="https://images.pexels.com/photos/6684265/pexels-photo-6684265.jpeg?auto=compress&cs=tinysrgb&w=600"
+        <div class="card h" style="width: 18rem;" id="C" s>
+            <a href="#"><img src="https://images.pexels.com/photos/4947408/pexels-photo-4947408.jpeg?auto=compress&cs=tinysrgb&w=400"
                 class="card-img-top" alt=" ">
             <div class="card-body">
                 <h5 class="card-title">Ultimas noticias</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <p class="card-text">todavía no tenemos ultimas noticias</p>
                 <a href="#" class="btn btn-primary" style="background-color: rgba(255, 123, 0, 0.767);">Ir a ello</a>
+            </a>
             </div>
         </div>
 
@@ -97,7 +99,7 @@
 
     <aside class="asides">
         <ul>
-            <li><a href="">link 1</a></li>
+            <li><a href="">LinkedInk</a></li>
             <li><a href="">Facebook</a></li>
             <li><a href="">Twitter</a></li>
             <li><a href="">Instagram</a></li>
