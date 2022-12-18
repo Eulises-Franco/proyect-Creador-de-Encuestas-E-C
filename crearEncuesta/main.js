@@ -29,7 +29,7 @@ function aggPregunta(){
             '<input type="radio" id="radio2">'+
             '<input type="text" id="respuesta02" placeholder="responder" required>'+
         
-            '<button type="button" id="adresp'+i+'" onclick="addrespuestas()">+</button>añadir respuesta'+
+            '<button type="button" id="adresp'+i+'" onclick="addrespuestas('+i+')">+</button>añadir respuesta'+
             '<button type="button">-</button>eliminar respuesta'+
         '</div><br></div><br>');
      
@@ -75,13 +75,12 @@ function remove(id_pregunta, id_div){
 }
 
 //función que añade respuestas
-j=2
-function addrespuestas(){ 
-    j++;
+function addrespuestas(index){ 
+    console.log(index)
     //var compara = document.getElementById("adresp"+i);
-        $('#respuestas'+i+'').append(
-        '<br><input type="radio" id="radio'+j+'">'+
-        '<input type="text" id="respuesta0'+j+'" placeholder="responder" required>'
+        $('#respuestas'+index+'').append(
+        '<br><input type="radio" id="radio'+i+'">'+
+        '<input type="text" id="respuesta0'+i+'" placeholder="responder" required>'
         );
 
 }
