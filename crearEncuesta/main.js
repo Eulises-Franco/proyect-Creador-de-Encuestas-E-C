@@ -22,18 +22,21 @@ function aggPregunta(){
     $('#formulario').append('<div id="preguntas'+i+'"><input type="text" id="pregunta'+i+'" placeholder="Pregunta'+i+'" required>'+
             '<button type="button" onclick="aggPregunta()">+</button>añadir pregunta'+
             '<button type="button" onclick="remove(\'pregunta'+i+'\', \'preguntas'+i+'\')">-</button>eliminar pregunta'+
-        '<div id="respuestas">'+
+        '<div id="respuestas'+i+'">'+
             '<input type="radio" id="radio1">'+
-            '<input type="text" id="respuesta01" placeholder="responder" required>'+
+            '<input type="text" id="respuesta01" placeholder="responder" required><br>'+
 
             '<input type="radio" id="radio2">'+
             '<input type="text" id="respuesta02" placeholder="responder" required>'+
         
-            '<button type="button">+</button>añadir respuesta'+
+            '<button type="button" id="adresp'+i+'" onclick="addrespuestas()">+</button>añadir respuesta'+
             '<button type="button">-</button>eliminar respuesta'+
-        '</div> <br></br></div>');
-        return(i);
+        '</div><br></div><br>');
+     
+    console.log(i);
+    return(i);
 }
+        
 
 var h=console.log(aggPregunta)
 
@@ -55,15 +58,17 @@ function remove(id_pregunta, id_div){
         //var 
         //var id="preguntas"+i;
         var valor_campo = $('#'+id_pregunta).val();
-        console.log(valor_campo);
-        if (valor_campo === ''){
+        //console.log(valor_campo);
+        //if (valor_campo === ""){
             //let fuera= document.getElementById(id);
-            $('#'+id_div).remove();
-            i=i-1;
+        $('#'+id_div).remove();
+        i=i-1;
+        console.log(i);
+        
             
-        }else{
+        /*}else{
             alert ("Campo lleno, no se puede eliminar");
-        }
+        }*/
         
     }
 
@@ -71,6 +76,12 @@ function remove(id_pregunta, id_div){
 
 //función que añade respuestas
 j=2
-function addrespuetas(){
-    
+function addrespuestas(){ 
+    j++;
+    var compara = document.getElementById("adresp"+i);
+        $('#respuestas'+i+'').append(
+        '<br><input type="radio" id="radio'+j+'">'+
+        '<input type="text" id="respuesta0'+j+'" placeholder="responder" required>'
+        );
+
 }

@@ -9,24 +9,24 @@
 </head>
 <body>
     <form id="formulario">
-        <div id="preguntas0">
-            <input type="text" id="pregunta1" placeholder="Pregunta 0" required>
+        <div id="preguntas">
+            <input type="text" id="pregunta" placeholder="Pregunta 0" required>
             <button type="button" onclick="aggPregunta()">+</button>añadir pregunta
-            <button type="button" onclick="remove()">-</button>eliminar pregunta
+            <button type="button" onclick="remove('pregunta','preguntas')">-</button>eliminar pregunta
         
     
-            <div id="respuestas">
+            <div id="respuestas0">
                 <input type="radio" id="radio1">
                 <input type="text" id="respuesta01" placeholder="responder" required>
-
-                <input type="radio" id="radio2">
+                <br>
+                <input type="radio" id="radio02">
                 <input type="text" id="respuesta02" placeholder="responder" required>
+               
         
-                <button type="button">+</button>añadir respuesta
+                <button type="button" id="adresp0" onclick="addrespuestas()">+</button>añadir respuesta
                 <button type="button">-</button>eliminar respuesta
-            </div>
-            <br></br>
-        </div>
+            </div><br>
+        </div><br>
     </form>    
 
         <div>
