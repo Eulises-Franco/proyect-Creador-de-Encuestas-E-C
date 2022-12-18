@@ -68,35 +68,31 @@ a:active {
     height: 60%;
     width: 100%;
 }
-.opciones button{
-    margin: 10px;
-    text-decoration: none;
-    height: 60%;
-    width: 100%;
-}
-
 .opciones p:hover {
     background-color: bisque;
 }
 
 #Mas {
-    background-color: white;
     border: none;
-    width: 50px;
-    display: flex;
-}
-
-#Mas ul{
-    position: absolute;
-    margin: 35px;
-    display: none;
-    width: 15%;
+    padding: 0;
+    margin: 0;
+    height: 40px;
 }
 
 #Mas:hover {
-    background-color: bisque;
+    background-color: white;
 }
 
+.menus {
+    position: fixed;
+    display: none;
+    right: 2px;
+    width: 100px;
+    top: 120px;
+    background-color: rgba(255, 123, 0, 0.767);
+    color: white;
+    opacity: 0.85;
+}
 
 /*header*/
 
