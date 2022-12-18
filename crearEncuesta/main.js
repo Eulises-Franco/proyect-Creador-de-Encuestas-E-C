@@ -78,7 +78,7 @@ function remove(id_pregunta, id_div){
 j=2
 function addrespuestas(){ 
     j++;
-    var compara = document.getElementById("adresp"+i);
+    //var compara = document.getElementById("adresp"+i);
         $('#respuestas'+i+'').append(
         '<br><input type="radio" id="radio'+j+'">'+
         '<input type="text" id="respuesta0'+j+'" placeholder="responder" required>'
