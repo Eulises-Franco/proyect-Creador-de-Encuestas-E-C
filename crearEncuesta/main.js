@@ -25,13 +25,12 @@ function aggPregunta(){
         '<div id="respuestas'+i+'">'+
             '<input type="radio" id="radio1">'+
             '<input type="text" id="respuesta01" placeholder="responder" required><br>'+
-
             '<input type="radio" id="radio2">'+
             '<input type="text" id="respuesta02" placeholder="responder" required>'+
         
             '<button type="button" id="adresp'+i+'" onclick="addrespuestas('+i+')"><i class="fa-solid fa-plus"></i></button>añadir respuesta'+
-            '<button type="button"><i class="fa-solid fa-minus"></i></button>eliminar respuesta'+
-        '</div><br></div><br>');
+            '<button type="button" id="remv" onclick="quitarrespuesta()"><i class="fa-solid fa-minus"></i></button>eliminar respuesta'+
+        '<br></div><br></div><br>');
      
     console.log(i);
     return(i);
@@ -80,8 +79,19 @@ function addrespuestas(id_res){
     j++;
     //var compara = document.getElementById("adresp"+i);
         $('#respuestas'+id_res+'').append(
-        '<br><input type="radio" id="radio'+j+'">'+
+        '<br id="brmolesto"><input type="radio" id="radio'+j+'">'+
         '<input type="text" id="respuesta0'+j+'" placeholder="responder" required>'
         );
 
+}
+
+function quitarrespuesta(){
+    if(j==2){
+        alert("no puedes tener menos de 2 respusetas");
+    }else{
+        $('#radio'+j).remove();
+        $('#respuesta0'+j).remove();
+        $('#brmolesto').remove();
+        j=j-1
+}
 }
