@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Encuesta</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form id="formulario">
+        <div id="preguntas0">
+            <input type="text" id="pregunta1" placeholder="Pregunta 0" required>
+            <button type="button" onclick="aggPregunta()">+</button>añadir pregunta
+            <button type="button" onclick="remove()">-</button>eliminar pregunta
+        
+    
+            <div id="respuestas">
+                <input type="radio" id="radio1">
+                <input type="text" id="respuesta01" placeholder="responder" required>
+
+                <input type="radio" id="radio2">
+                <input type="text" id="respuesta02" placeholder="responder" required>
+        
+                <button type="button">+</button>añadir respuesta
+                <button type="button">-</button>eleminiar respuesta
+            </div>
+            <br></br>
+        </div>
+    </form>    
+
+        <div>
+            <input type="submit" id="boton" name="boton" value="enviar" onclick="pregunta()">
+        </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
