@@ -1,10 +1,5 @@
 //funcion que obtiene las preguntas
-function pregunta() {
-    var question= document.getElementById("pregunta1").value;
-    var respuesta01=document.getElementById("respuesta01").value;
-    var respuesta02=document.getElementById("respuesta02").value;
-    console.log(question);
-}
+
 //evitar que se borren los formularios
 const prevenir=document.getElementById("formulario");
 
@@ -14,25 +9,32 @@ prevenir.addEventListener("submit", function(event){
 
 //funcion que duplica las preguntas
 let i = 0;
-function aggPregunta(){
+var Arrayfinal=[];
+function aggPregunta(){        
+    /*let objetosfinal={
+        "preguntas": document.getElementById('pregunta'+i).value,
+    }
+    encuesta.push(objetosfinal);*/
     i=i+1;
     //var antes=document.getElementById("preguntas");
     /*var nueva=document.getElementById("formulario").innerHTML+=*/
     
-    $('#formulario').append('<div id="preguntas'+i+'"><input type="text" id="pregunta'+i+'" placeholder="Pregunta'+i+'" required>'+
+    $('#formulario').append('<div id="preguntas'+i+'" class="preguntas"><input type="text" id="pregunta'+i+'" placeholder="Pregunta'+i+'" class="uno" required>'+
             '<button type="button" onclick="aggPregunta()"><i class="fa-solid fa-plus"></i></button>añadir pregunta'+
             '<button type="button" onclick="remove(\'pregunta'+i+'\', \'preguntas'+i+'\')"><i class="fa-solid fa-minus"></i></button>eliminar pregunta'+
-        '<div id="respuestas'+i+'">'+
-            '<input type="radio" id="radio1">'+
+        '<div id="respuestas'+i+'" class="respuestas">'+
+            '<input type="checkbox" id="radio1" name="opcion0">'+
             '<input type="text" id="respuesta01" placeholder="responder" required><br>'+
-            '<input type="radio" id="radio2">'+
+            '<input type="checkbox" id="radio2" name="opcion1">'+
             '<input type="text" id="respuesta02" placeholder="responder" required>'+
         
             '<button type="button" id="adresp'+i+'" onclick="addrespuestas('+i+')"><i class="fa-solid fa-plus"></i></button>añadir respuesta'+
             '<button type="button" id="remv" onclick="quitarrespuesta()"><i class="fa-solid fa-minus"></i></button>eliminar respuesta'+
-        '<br></div><br></div><br>');
-     
-    console.log(i);
+        '</div><br></div>');
+
+    
+    console.log(Arrayfinal);
+    i++;
     return(i);
 }
         
@@ -61,6 +63,7 @@ function remove(id_pregunta, id_div){
         //if (valor_campo === ""){
             //let fuera= document.getElementById(id);
         $('#'+id_div).remove();
+        //$('# brmolesto').remove();
         i=i-1;
         console.log(i);
         
@@ -74,24 +77,31 @@ function remove(id_pregunta, id_div){
 }
 
 //función que añade respuestas
-j=2
+var j=2;
 function addrespuestas(id_res){ 
     j++;
     //var compara = document.getElementById("adresp"+i);
         $('#respuestas'+id_res+'').append(
-        '<br id="brmolesto"><input type="radio" id="radio'+j+'">'+
+        '<br id=brmolesto'+j+'><input type="checkbox" id="radio'+j+'" name="opcion1'+j+'">'+
         '<input type="text" id="respuesta0'+j+'" placeholder="responder" required>'
         );
 
 }
 
+
 function quitarrespuesta(){
     if(j==2){
-        alert("no puedes tener menos de 2 respusetas");
+        alert("no puedes tener menos de 2 respuestas");
     }else{
         $('#radio'+j).remove();
         $('#respuesta0'+j).remove();
-        $('#brmolesto').remove();
-        j=j-1
+        $('#brmolesto'+j).remove();
+        j=j-1;
 }
 }
+
+
+//crear un array
+console.log($("input:text").value);
+console.log($('form').serializeArray(i))
+

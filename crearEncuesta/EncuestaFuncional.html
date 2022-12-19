@@ -6,33 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Encuesta</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../hoja.css">
     <link rel="stylesheet" href="../imagenes/fontawesome/css/all.min.css">
 </head>
 <body>
-    <form id="formulario">
-        <div id="preguntas">
-            <input type="text" id="pregunta" placeholder="Pregunta 0" required>
+    <nav class="buscador">
+        <div clas="lupa">
+            <a href=""><img src="../imagenes/lupa.png" alt="lupa" width="30px" height="30px"></a>
+        </div>
+        <div>
+            <input type="text" class="bar">
+        </div>
+    </nav>
+    <div class="navegacion">
+        <div>
+            <img src="../imagenes/logo.png" alt="logo" width="150px">
+        </div>
+        <div class="opciones">
+            <a href="../index.html">
+                <p>inicio</p>
+            </a>
+            <a href="../Sobre Nosotros/Nosotros.html">
+                <p>Sobre Nosotros</p>
+            </a>
+            <a href="../LOGIN/login.html">
+                <p>Iniciar Sesión</p>
+            </a>
+            <a href="">
+                <p>Mas..</p>
+            </a>
+        </div>
+    </div>
+    <h1>Crear tu encuesta</h1>
+    <p>esta es la opción gratuita, solo hay accesos a 
+        las preguntas tipo opción multiple. Utiliza los botones de abajo para poder crear tus 
+        preguntas y demas.
+    </p>
+    
+    <form id="formulario" class="formulario" action="https://formsubmit.co//" method="POST">
+        <div id="preguntas" class="preguntas">
+            <input type="text" id="pregunta0" placeholder="Pregunta 0" class="uno" name="pregunta0" required>
             <button type="button" onclick="aggPregunta()"><i class="fa-solid fa-plus"></i></button>añadir pregunta
             <button type="button" onclick="remove('pregunta','preguntas')"><i class="fa-solid fa-minus"></i></button>eliminar pregunta
         
     
-            <div id="respuestas0">
-                <input type="radio" id="radio1">
+            <div id="respuestas0" class="respuestas">
+                <input type="checkbox" id="radio1" name="opcion0">
                 <input type="text" id="respuesta01" placeholder="responder" required>
                 <br>
-                <input type="radio" id="radio02">
+                <input type="checkbox" id="radio02" name="opcion1">
                 <input type="text" id="respuesta02" placeholder="responder" required>
                
         
                 <button type="button" id="adresp0" onclick="addrespuestas(0)"><i class="fa-solid fa-plus"></i></button>añadir respuesta
                 <button type="button" id="remv" onclick="quitarrespuesta()"><i class="fa-solid fa-minus"></i></button>eliminar respuesta
-            <br></div><br>
+            </div>
         </div><br>
-    </form>    
-
-        <div>
-            <input type="submit" id="boton" name="boton" value="enviar" onclick="pregunta()">
+       <div >
+            <input class="enviar" type="submit" id="boton" name="boton" value="enviar" onclick="">
         </div>
+    </form> 
+        
     
     <script type="text/javascript" src="../jquery-3.6.0.js"></script>
     <script type="text/javascript" src="../imagenes/fontawesome/js/all.min.js"></script>
